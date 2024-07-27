@@ -22,6 +22,10 @@ Commit é um conjunto de alterações no código; commitar é salvar essas alter
 
 Branches são separações de código, com elas é possível que várias pessoas atuem em um mesmo projeto independentemente.
 
+Quando mudamos de branch, só vão aparecer os arquivos criados/commitados naquela branch.
+
+Para criar uma branch no GitHub é só clicar na "master" e criar uma nova. Para excluir clicar nas branchs e clicar na lixeira da branch a ser excluída.
+
 - **Master** – branch principal, produção.
 - **Dev** ou **Developer** – desenvolvimento, após teste na máquina local.
 - **Homolog** – homologação, onde as pessoas de negócio podem validar a solução e pessoas da área de qualidade efetuam mais testes para validar a solução.
@@ -42,14 +46,24 @@ Fork é semelhante ao clone, só que dentro do seu GitHub, podendo fazer pull re
 
 # Comandos Git
 
-- **git pull**: Atualiza nosso repositório local. É realizado um merge entre o repositório online (GitHub) com o que temos localmente, evitando conflitos e mantendo o conteúdo atualizado.
-
-- **git push**: Envia alterações commitadas localmente para o repositório remoto (GitHub).
-
 - **git init**: Inicializa a pasta.
 
-- **git status**: Verifica se houve alguma alteração dentro da pasta.
+- **git clone**: + URL do repositório do Git Hub para clonar na máquina local
 
-- **git add / git add .**: Adiciona todos os arquivos na fila dos commits.
+- **git remote add origin <url>**: para adicionar o repositório remoto
 
-- **git add [caminho do arquivo]**: Para adicionar um arquivo específico.
+- **git status**: Verifica se houve alguma alteração dentro da pasta
+
+- **git add / git add .**: Adiciona todos os arquivos na fila dos commits
+
+- **git add [caminho do arquivo]**: Para adicionar um arquivo específico
+
+- **git push**: Envia alterações commitadas localmente para o repositório remoto (GitHub)
+
+- **git pull**: Atualiza nosso repositório local. É realizado um merge entre o repositório online (GitHub) com o que temos localmente, evitando conflitos e mantendo o conteúdo atualizado
+
+- **git checkout -b**: cria e já troca para uma nova branch
+
+- **git branch**: mostra as branchs existentes, a branch que você está aparece com uma cor diferente
+
+-**git checkout nomedabranch**: vai para branch escolhida
